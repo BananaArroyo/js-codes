@@ -4,36 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
 
     <form action="">
-        <select name="menu" style="vertical-align: top;">
-            <option selected>Primera fecha</option>
+        <select name="menu" id="workshopPresencial">
             <optgroup label="Junio">
-                <option value="1">Martes 15</option>
+                <option value="1" selected>Martes 15</option>
                 <option value="2">Jueves 24</option>
-                <option value="3">Miercoles 30</option>
             </optgroup>
             <optgroup label="Julio">
-                <option value="4">Miercoles 7</option>
-                <option value="5">Martes 13</option>
-                <option value="6">Jueves 22</option>
+                <option value="3">Martes 13</option>
+                <option value="4">Jueves 22</option>
             </optgroup>
             <optgroup label="Agosto">
-                <option value="7">Miercoles 4</option>
-                <option value="8">Martes 10</option>
-                <option value="9">Jueves 19</option>
+                <option value="5">Martes 10</option>
+                <option value="6">Jueves 19</option>
+            </optgroup>
+            <optgroup label="Septiembre">
+                <option value="7">Martes 14</option>
+                <option value="8">Jueves 23</option>
+            </optgroup>
+            <optgroup label="Octubre">
+                <option value="9">Martes 12</option>
+                <option value="10">Jueves 21</option>
+            </optgroup>
+            <optgroup label="Noviembre">
+                <option value="11">Martes 16</option>
+                <option value="12">Jueves 25</option>
+            </optgroup>
+            <optgroup label="Diciembre">
+                <option value="13">Martes 7</option>
+                <option value="14">Jueves 9</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <form action="">
+        <select name="menu" id="workshopOnline">
+            <optgroup label="Junio">
+                <option value="15" selected>Miércoles 30</option>
+            </optgroup>
+            <optgroup label="Julio">
+                <option value="16">Miércoles 7</option>
+            </optgroup>
+            <optgroup label="Agosto">
+                <option value="17">Miércoles 4</option>
+            </optgroup>
+            <optgroup label="Septiembre">
+                <option value="18">Miércoles 8</option>
+            </optgroup>
+            <optgroup label="Octubre">
+                <option value="19">Miércoles 6</option>
+            </optgroup>
+            <optgroup label="Noviembre">
+                <option value="20">Miércoles 10</option>
+            </optgroup>
+            <optgroup label="Diciembre">
+                <option value="21">Miércoles 1</option>
             </optgroup>
         </select>
     </form>
 
     <!-- Dinamico: Colocar en JSON ID que sera para value -->
 
-    <!-- <div class="square elemento1"></div> -->
+    <div id="wPresencial" class="square elemento1"></div>
+    <div id="wOnline" class="square elemento2"></div>
 
-    <script src="app.js"></script>
+    <script src="app/app.js"></script>
     
 </body>
 </html>
